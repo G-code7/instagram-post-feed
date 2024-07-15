@@ -1,201 +1,202 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Instagram feed</title>
+    <style>
+        .img-cover {
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar p-3 mb-2 bg-dark text-white">
         <div class="container-fluid">
-          <a class="navbar-brand text-white">
-            <i class="fa-brands fa-instagram"></i>
-            Instagram
-          </a>
-          <form class="d-flex" role="search">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Create a new post
-            </button>
-            <div class="dropdown show px-1">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
-                </a>
-              
-                <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+            <a class="navbar-brand text-white">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="dropdown show px-1">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <div class="dropdown-menu mr-4" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </div>
-              </div>
-          </form>
+            </form>
         </div>
     </nav>
-
-    <ul class="nav nav-tabs d-flex justify-content-center mt-2 id="myTab" role="tablist">
+    
+    <ul class="nav nav-tabs d-flex justify-content-center mt-2" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-            <i class="fa-solid fa-table-cells"></i>
-          </button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-            <i class="fa-solid fa-square"></i>
-          </button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+            </button>
         </li>
-      </ul>
-      <!-- ########## GRID  -->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <div class="container mt-4">
-              <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-4.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 4">
-                    </div>
+    </ul>
+    
+    <!-- ########## GRID  -->
+    <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="container mt-4">
+            <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-4.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 4">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-5.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 5">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-5.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 5">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-6.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 6">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-6.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 6">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-7.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 7">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-7.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 7">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-8.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 8">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-8.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 8">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post1.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 9">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post1.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 9">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post2.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 10">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post2.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 10">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post3.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 11">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post3.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 11">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post4.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 12">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post4.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 12">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-1.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 1">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-1.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 1">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-2.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 2">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-2.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 2">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
-                        <img src="/assets/images/instagram-post-feed-3.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 3">
-                    </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="position-relative" style="padding-top: 100%; overflow: hidden;">
+                    <img src="/assets/images/instagram-post-feed-3.jpg" class="img-fluid position-absolute top-0 start-0 w-100 h-100 img-cover" alt="Image 3">
                 </div>
-              </div>
-            </div>      
-        </div>
+            </div>
+            </div>
+        </div>      
+    </div>
 
-        <!-- ####### FEED  -->
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-12 col-md-8 col-lg-6 mb-8 mx-auto">
-                        
-                      <div class="card mx-auto mb-4">
+    <!-- ####### FEED  -->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6 mb-8 mx-auto">
+                    
+                    <div class="card mx-auto mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title mb-0">Zapatos mágicos que cantan</h5>
+                            <span>07/01</span>
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post-feed-4.jpg" class="card-img-top" alt="Image 4">
+                        <p class="card-text mt-2"><strong>456 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bananas fly at midnight.</p>
+                    </div>
+                    
+                    <div class="card mx-auto mb-4">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="card-title mb-0">Zapatos mágicos que cantan</h5>
+                                <h5 class="card-title mb-0">El secreto de los gatos</h5>
                                 <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post-feed-4.jpg" class="card-img-top" alt="Image 4">
-                          <p class="card-text mt-2"><strong>456 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bananas fly at midnight.</p>
-                      </div>
-                      
-                      <div class="card mx-auto mb-4">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                  <h5 class="card-title mb-0">El secreto de los gatos</h5>
-                                  <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post-feed-5.jpg" class="card-img-top" alt="Image 5">
-                          <p class="card-text mt-2"><strong>789 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Unicorns whisper secrets.</p>
-                      </div>
-                      
-                      <div class="card mx-auto mb-4">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                  <h5 class="card-title mb-0">Bailando con dragones</h5>
-                                  <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post-feed-6.jpg" class="card-img-top" alt="Image 6">
-                          <p class="card-text mt-2"><strong>321 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Penguins love jazz music.</p>
-                      </div>
-                      
-                      <div class="card mx-auto mb-4">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                  <h5 class="card-title mb-0">Aventuras en Marte</h5>
-                                  <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post-feed-7.jpg" class="card-img-top" alt="Image 7">
-                          <p class="card-text mt-2"><strong>654 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Robots dream of electric sheep.</p>
-                      </div>
-                      
-                      <div class="card mx-auto mb-4">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                  <h5 class="card-title mb-0">El enigma del bosque</h5>
-                                  <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post-feed-8.jpg" class="card-img-top" alt="Image 8">
-                          <p class="card-text mt-2"><strong>987 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elephants remember everything.</p>
-                      </div>
-                      
-                      <div class="card mx-auto mb-4">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                  <h5 class="card-title mb-0">Misterios del océano</h5>
-                                  <span>07/01</span>
-                              </div>
-                          </div>
-                          <img src="/assets/images/instagram-post1.jpg" class="card-img-top" alt="Image 9">
-                          <p class="card-text mt-2"><strong>432 Likes</strong></p>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolphins play chess on Sundays.</p>
-                      </div>
-                      
-
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post-feed-5.jpg" class="card-img-top" alt="Image 5">
+                        <p class="card-text mt-2"><strong>789 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Unicorns whisper secrets.</p>
+                    </div>
+                    
+                    <div class="card mx-auto mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Bailando con dragones</h5>
+                                <span>07/01</span>
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post-feed-6.jpg" class="card-img-top" alt="Image 6">
+                        <p class="card-text mt-2"><strong>321 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Penguins love jazz music.</p>
+                    </div>
+                    
+                    <div class="card mx-auto mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Aventuras en Marte</h5>
+                                <span>07/01</span>
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post-feed-7.jpg" class="card-img-top" alt="Image 7">
+                        <p class="card-text mt-2"><strong>654 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Robots dream of electric sheep.</p>
+                    </div>
+                    
+                    <div class="card mx-auto mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">El enigma del bosque</h5>
+                                <span>07/01</span>
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post-feed-8.jpg" class="card-img-top" alt="Image 8">
+                        <p class="card-text mt-2"><strong>987 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elephants remember everything.</p>
+                    </div>
+                    
+                    <div class="card mx-auto mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Misterios del océano</h5>
+                                <span>07/01</span>
+                            </div>
+                        </div>
+                        <img src="/assets/images/instagram-post1.jpg" class="card-img-top" alt="Image 9">
+                        <p class="card-text mt-2"><strong>432 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolphins play chess on Sundays.</p>
                     </div>
                 </div>
+            </div>
         </div>
-      </div>
+    </div>
   
   
   
@@ -228,11 +229,6 @@
         </div>
       </div>  
 
-      <style>
-        .img-cover {
-            object-fit: cover;
-        }
-      </style>
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
